@@ -1,0 +1,1020 @@
+
+  /* =========================
+   📱 MOBILE RESPONSIVE FIX
+   ========================= */
+
+   @media (max-width: 768px) {
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar button {
+    width: 100%;
+  }
+
+  .home-cards,
+  .tips-container,
+  .tip-container,
+  .patient-container,
+  .resource-container,
+  .achievement-container,
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+/* Global */
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Header */
+header {
+  font-size: 1.6em;
+  padding: 18px 10px;
+}
+
+/* Navbar → stack buttons */
+.navbar {
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.navbar button {
+  flex: 1 1 45%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Pages */
+.page {
+  padding: 20px 12px;
+  margin: 10px;
+}
+
+/* Dashboard panels */
+.dashboard-panel {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* User selection buttons */
+.user-select-buttons {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-button {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Home cards */
+.home-card {
+  width: 100%;
+max-width: 300px;
+}
+
+/* Tips / Parent / Nurse cards */
+.tips-card,
+.tip-card,
+.patient-card,
+.resource-card,
+.achievement-card {
+width: 100%;
+max-width: 300px;
+
+}
+
+/* Videos */
+.video-card {
+  width: 100%;
+max-width: 300px;
+
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Articles */
+.articles-list {
+  grid-template-columns: 1fr;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9em;
+  padding: 12px;
+}
+}
+
+/* 📱 Extra small phones */
+@media (max-width: 480px) {
+
+header {
+  font-size: 1.4em;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+.navbar button {
+  flex: 1 1 100%;
+}
+}
+
+  html, body {
+   
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #fdf6f0;
+    
+  }
+ 
+/* Content container grows to fill space */
+.content {
+  flex: 1 ; /* allow it to grow and shrink, take available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+  header {
+    background: #ff7f50;
+    padding: 25px;
+    font-size: 2.2em;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background: #ff9360;
+    box-shadow: 0 2px 5px rgba(215, 5, 5, 0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 900px;
+  }
+
+  .navbar button {
+    background: rgb(239, 227, 3);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .navbar button:hover {
+    background: #ffcc33;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+
+  .content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .page {
+    display: none;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    animation: fadeIn 0.5s ease;
+    text-align: center;
+    background: linear-gradient(135deg, #fff0e6, #ffe5d9);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .page.active {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff5a36;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.15em;
+    font-weight: 400;
+    color: #333;
+  }
+  .user-select-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.user-button {
+  background: linear-gradient(135deg, #ff7f50, #ffd35c);
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  width: 180px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.user-button img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.user-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.user-button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive for phones */
+@media (max-width: 600px) {
+  .user-button {
+    width: 90%;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .user-button img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+  .dashboard-panel {
+    border-radius: 20px;
+    margin: 15px;
+    padding: 20px;
+    width: 100%;
+max-width: 300px;
+    
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .dashboard-panel img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-panel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  /* Kid Panel Style */
+  .kid-panel {
+    background: linear-gradient(135deg, #ffe066, #ffd93d);
+  }
+
+  .kid-panel h2 {
+    color: #ff5a36;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  /* Parent Panel Style */
+  .parent-panel {
+    background: linear-gradient(135deg, #a0e7e5, #79d7d0);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  .parent-panel h2 {
+    color: #007f5f;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  /* Nurse Panel Style */
+  .nurse-card {
+    background: linear-gradient(135deg, #90e0ef, #00b4d8);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  .nurse-card h2 {
+    color: #023e8a;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  footer {
+  background: #ff7f50;
+  color: white;
+  padding: 15px 10px; /* smaller padding to reduce height */
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  flex-shrink: 0; /* never shrink */
+  box-sizing: border-box;
+}
+  footer a {
+    color: #ffd35c;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 600;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer .emoji {
+    margin: 0 3px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+  /* Back Button Style */
+.page button {
+  background: #ffcc33;        /* bright yellow */
+  color: #333;                /* dark text for contrast */
+  border: none;
+  border-radius: 25px;        /* rounded edges */
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-top: 15px;
+}
+
+.page button:hover {
+  background: #ffd93d;        /* brighter yellow on hover */
+  transform: scale(1.05);     /* subtle growth on hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+/* Container for all videos */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between video cards */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Each video card */
+.video-card {
+  background: linear-gradient(135deg, #fff0e6, #ffe5d9);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+max-width: 300px; /* card width */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover animation */
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Video styling inside card */
+.video-card video {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Video description below video */
+.video-card p {
+  font-weight: 600;
+  color: #ff5a36;
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Back button styling */
+.page button {
+  background: #ffcc33;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-top: 25px;
+}
+
+.page button:hover {
+  background: #ffd93d;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.page {
+  display: none; /* hide all pages by default */
+}
+
+.page.active {
+  display: block; /* show the active page */
+}
+
+
+/* Home Page Styling */
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  width: 100%;
+max-width: 300px;
+}
+
+.home-card {
+  background: linear-gradient(135deg, #ffd35c, #ffcc33);
+  width: 100%;
+max-width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.home-card .icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.home-card h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.home-card p {
+  font-size: 1em;
+  color: #222;
+  line-height: 1.4;
+}
+
+
+/* Relax Tips Styling */
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tips-card {
+  background: rgb(255, 213, 0);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+max-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tips-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tips-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20PX;
+  margin-bottom: 12px;
+}
+
+.tips-card h2 {
+  font-size: 1.2em;
+  color: #ff5a36;
+  margin-bottom: 8px;
+}
+
+.tips-card p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.4;
+}
+
+#relaxTips button {
+  display: block;
+  margin: 25px auto 0;
+  background: #ffd35c;
+  color: #333333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#relaxTips button:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.achievement-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, #ffe066, #ffd93d);
+  border-radius: 25px;
+  padding: 25px;
+  width: 100%;
+max-width: 300px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.3);
+}
+
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle, rgba(224, 209, 0, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+.achievement-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
+}
+
+/* Bounce animation */
+.applaud img {
+  animation: applaud 0.6s ease-in-out;
+}
+
+@keyframes applaud {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.25) rotate(-5deg); }
+  50% { transform: scale(1.4) rotate(5deg); }
+  75% { transform: scale(1.25) rotate(-5deg); }
+  100% { transform: scale(1); }
+}
+
+/* Confetti */
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: red;
+  animation: confetti-fall 1s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translateY(120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  font-size: 18px;
+  animation: star-fly 1s ease-out forwards;
+}
+
+@keyframes star-fly {
+  to {
+    transform: translateY(-80px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+/* Parent Tips with Images Styles */
+.tip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.tip-card {
+  background: linear-gradient(135deg, #a0e7e5, #79d7d0);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+max-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tip-card h2 {
+  font-size: 1.2em;
+  color: #023e8a;
+  margin-bottom: 8px;
+}
+
+.tip-card p {
+  font-size: 1em;
+  color: #03396c;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tip-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#parentTips button {
+  display: block;
+  margin: 25px auto 0;
+  background: #ffd35c;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#parentTips button:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+
+ /* Parent Articles Page Styling */
+#parentArticles {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #fdf6f0, #fff0e6);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+#parentArticles h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #ff5a36;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#parentArticles p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* single column default */
+  gap: 15px;
+}
+
+.articles-list li {
+  background: rgb(201, 232, 174);
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.articles-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.articles-list a {
+  text-decoration: none;
+  color: #ff5a36;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.articles-list a:hover {
+  text-decoration: underline;
+  color: #ff7f50;
+}
+
+#parentArticles button {
+  display: block;
+  margin: 25px auto 0;
+  background: #ffd35c;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#parentArticles button:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive Grid for wider screens */
+@media (min-width: 600px) {
+  .articles-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .articles-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+
+/* Patient Management Cards */
+.patient-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.patient-card {
+  background: linear-gradient(135deg, #90e0ef, #00b4d8);
+  border-radius: 20px;
+  padding: 20px;
+ width: 100%;
+max-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.patient-card .icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.patient-card h2 {
+  font-size: 1.2em;
+  color: #023e8a;
+  margin-bottom: 8px;
+}
+
+.patient-card p {
+  font-size: 1em;
+  color: #03396c;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.patient-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#patientManagement button {
+  display: block;
+  margin: 25px auto 0;
+  background: #ffd35c;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#patientManagement button:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Nurse Resource Library Cards */
+.resource-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.resource-card {
+  background: linear-gradient(135deg, #90e0ef, #00b4d8);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-card .icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.tips-card .icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.resource-card h2 {
+  font-size: 1.2em;
+  color: #023e8a;
+  margin-bottom: 8px;
+}
+
+.resource-card p {
+  font-size: 1em;
+  color: #03396c;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.resource-card a {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffd35c;
+  color: #333;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+}
+
+.resource-card a:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.resource-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#nurseResources button {
+  display: block;
+  margin: 25px auto 0;
+  background: #ffd35c;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#nurseResources button:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
